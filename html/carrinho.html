@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <section class="header">
+        <a href="#"><img src="/imagens/LOGO (1).png" alt="" width="140" height="100">
+            </a>
+        <div class="navbar">
+            <li> <a href="index.html">Home</a>
+            <li> <a href="produtos.html">Produtos</a>
+            <li> <a href="login.html">Entre</a>
+            <li> <img src="/imagens/shopping-bag.png" width="30" height="30">
+        </div>
+    </section>
+
+
+    <section id="carrinho" class="section-p1">
+        <table width="100%">
+            <thead> 
+                <td id="carrinho-tabela">Carrinho</td>
+                <tr>
+                    <td >Remover</td>
+                    <td >Imagem</td>
+                    <td >Produto</td>
+                    <td >Preço</td>
+                    <td >Quantidade</td>
+                    <td >Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="/imagens/remove.png" alt="" class="img-remover">
+                    </td>
+                    <td>
+                        <a href="uniproduto.html"><img src="/imagens/roupa1.png" alt=""></a>
+                    </td>
+                    <td class="desc-produto">
+                        Conjunto calça e blusa Feminino</td>
+                    <td class="valor produto">R$50,00</td>
+                    <td class="unidades-produto">
+                        <input type="number" value="1">
+                    </td>
+                    <td class="subtotal-produto">R$50,00</td>
+                </tr>
+                <tr></tr>
+                    <td>
+                        <img src="/imagens/remove.png" alt="" class="img-remover">
+                    </td>
+                    <td>
+                        <img src="/imagens/roupa1.png" alt="" class="uni-produto-carrinho">
+                    </td>
+                    <td class="desc-produto">
+                        Conjunto calça e blusa Feminino</td>
+                    <td class="valor produto">R$50,00</td>
+                    <td class="unidades-produto">
+                        <input type="number" value="1">
+                    </td>
+                    <td class="subtotal-produto">R$50,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id ="carrinho-final" class="section-p1">
+        <div id="subtotal" class="subtotal">
+            <h3>Total Carrinho</h3>
+            <table>
+                <tr>
+                    <td>Total Carrinho</td>
+                    <td>R$150,00</td>
+                </tr>
+                <tr>
+                    <td>Envio</td>
+                    <td>Grátis</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>R$150,00</strong></td>
+                </tr>
+            </table>
+            <button class="normal"> Confirmar compra</button>
+        </div>
+    </section>
+</body>
+</html>

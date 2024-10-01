@@ -9,6 +9,7 @@ body{
     background-color: #2c2c2c;
 }
 
+/*------------------------header universal--------------------------- */
 
 .header{
     display: flex;
@@ -39,5 +40,362 @@ body{
     transition: 0.3s ease;
 }
 .navbar li a:hover{
+    color: gold;
+}
+
+/* ------------------------------TELA HOME---------------------------- */
+
+#produto1{
+    text-align: center;
+    
+}
+
+.pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#produto1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    background-color: #3f3f41;
+    position: relative;
+}
+#produto1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#produto1 .pro img{
+    width: 50%;
+    border-radius: 20px;
+}
+
+#produto1 .pro .desc{
+    text-align: start;
+    padding: 10px 0;
+}
+#produto1 .pro .desc span{
+    color: #606063;
+    font-size: 12px;
+}
+#produto1 .pro .desc h5{
+    padding-top: 7px;
+    color: aliceblue;
+    font-size: 14px;
+}
+#produto1 .pro .desc h4{
+    padding-top: 7px ;
+    font-size: 15px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+#produto1 .pro .carrinho-produto{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 217, 0, 0.795);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* -----------------------PRODUTO UNICO------------------------------- */
+
+#detalhesp{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+#detalhesp .produto-unico{
+    width: 70%;
+    margin: 50px 50px 0 0;
+    padding-left: 625px;
+}
+
+.grupo-img-pequenas {
+    display: flex;
+    margin-top: 10px;
+}
+
+.colu-img-pequena{
+    flex-basis: 26%;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#detalhesp .detalhes-produto-unico{
+    width: 50%;
+    padding-top: 150px;
+}
+#detalhesp .detalhes-produto-unico h4{
+    padding: 40px 0 5px 0;  
+    text-decoration: none;
+    font-family: "Roboto", system-ui;  
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+#detalhesp .detalhes-produto-unico h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: "Roboto", system-ui;  
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+#detalhesp .detalhes-produto-unico select{
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+}   
+#detalhesp .detalhes-produto-unico input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#detalhesp .detalhes-produto-unico button{
+    background-color: rgba(245, 209, 9, 0.808);
+    text-decoration: none;
+    font-family: "Roboto", system-ui;  
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    height: 40px;
+    width: 90px;
+}
+
+
+/*---------------------------------- CARRINHO -----------------------*/
+
+#carrinho table{
+    width: 70%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    margin: 15px 15px 5px 250px;
+}
+
+#carrinho table img{
+    width: 70px;
+}
+
+#carrinho .img-remover{
+    width: 30px;
+}
+
+#carrinho table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#carrinho table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#carrinho table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#carrinho table td:nth-child(4),
+ #carrinho table td:nth-child(5),
+ #carrinho table td:nth-child(6)
+ {
+    width: 150px;
+    text-align: center;
+}
+
+#carrinho table td:nth-child(5) input{
+    width: 90px;
+    padding: 10px 50px 10px 15px;
+    
+}
+#carrinho table thead{
+    border: 1px solid #3f3f41;
+    border-left: 1px solid #3f3f41;
+    border-right: 1px solid #3f3f41;
+}
+
+
+#carrinho table td{
+    font-family: "Roboto", system-ui;  
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 13px;
+    padding: 18px 0 ;
+    border: 1px solid #3f3f41;;
+}
+
+#carrinho table tbody tr td {
+    padding-top: 15px;
+
+}
+
+#carrinho table tbody td {
+    font-size: 13px;
+}
+
+
+
+#carrinho table thead #carrinho-tabela{
+    padding-left: 50%;
+    font-size: 20px;
+    border: none;
+}
+
+#carrinho-final{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#carrinho-final .subtotal{
+    margin-top: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+    border:1px solid #3f3f41;
+    padding: 30px; 
+}
+
+.subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.subtotal table td{
+    color: white;
+    width: 50%;
+    border: 1px solid #3f3f41;
+    padding: 10px;
+    font-size: 13px;
+}
+.subtotal h3{
+    font-size: 18px;
+    color: white;
+}
+.subtotal button{
+    background-color: gold;
+    color: black;
+    padding: 12px 20px;
+    font-family: "Roboto", system-ui;  
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/*---------------------------------- LOGIN-----------------------*/
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.left-login > h1 {
+    color: gold;
+    font-family: "Roboto", system-ui;  
+    font-weight: 700;
+    font-style: normal;
+}
+.righ-login{
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #3f3f41;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login  h1{
+    color: rgb(197, 169, 9);
+    font-family: "Roboto", system-ui;  
+    font-weight: 800;
+    font-style: normal;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield  input{
+    width: 100%;
+    border-radius: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #3f3f41 ;
+    color: white;
+    font-size: 12pt;
+    outline: none;
+    box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.textfield  input::placeholder{
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform:uppercase ;
+    font-weight: 800 ;
+    letter-spacing: 3px;
+    color:rgb(228, 196, 19) ;
+    background-color: #00000056;
+    box-shadow: 0px 10px 40px -12px #000000c7;
+}
+
+.logo-login{
+    
+    margin-bottom:30px;
+}
+h6{
+    color: gold;
+}
+a{
     color: gold;
 }
