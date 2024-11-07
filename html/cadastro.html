@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <div class="main-login">
-        <img src="/imagens/LOGO (1).png" alt="" width="200" height="150" class="logo-login">
-        <div class="right-login">
-            <div class="card-login">
-                <h1>Cadastro</h1>
-                <div class="textfield">
-                    <label for="Nome">Nome</label>
-                    <input type="text" name="Nome" placeholder="Nome">
+    <form id="form">
+        <fieldset>
+            <div class="main-login">
+                <img src="/imagens/LOGO (1).png" alt="" width="150" height="100" class="logo-login">
+                <div class="right-login">
+                    <div class="card-login">
+                        <h1>Cadastro</h1>
+                        <div class="textfield">
+                            <label for="Nome">Nome</label>
+                            <input type="text" name="nome" placeholder="Nome" id="nome" required onblur="validarNome()">
+                        </div>
+                        <div class="textfield">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" placeholder="Email" id="email" required onblur="validarEmail()">
+                        </div>
+                        <div class="textfield">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="usuario" placeholder="Cpf" id="cpf"  required onblur="validaCPF()">
+                        </div>
+                        <div class="textfield">
+                            <label for="data">Data de Nascimento</label>
+                            <input type="date" name="data_nasc" id="data" required onblur="validarData()">
+                        </div>
+                        <div class="textfield">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="senha" id="senha" required onblur="validarSenha()">
+                        </div>
+                        <div class="textfield">
+                            <label for="confirmar_senha">confirmar senha</label>
+                            <input type="password" name="confirmar_senha" placeholder="confirmar_senha" id="confirmar_senha" required onblur="confirmar_senhas()">
+                        </div>
+                        <a href="login.html">
+                            <h6> Já tem um cadastro ?</h6>
+                        </a>
+                        <button type="submit" class="btn-login">Cadastrar</button>
+                    </div>
                 </div>
-                <div class="textfield">
-                    <label for="cpf">CPF</label>
-                    <input type="text" name="usuario" placeholder="Cpf">
-                </div>
-                <div class="textfield">
-                    <label for="data">Data de Nascimento</label>
-                    <input type="date" name="data-nasc">
-                </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
-                </div>
-                <a href="cadastro.html"><h6> Não tem Cadastro ?</h6></a>
-                <button class="btn-login"><a href="index.html">Cadastrar</a></button>
             </div>
-        </div>
-    </div>
+        </fieldset>
+    </form>
+
+
+    <script src="/script.js"></script>
 </body>
+
 </html>

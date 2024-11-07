@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <section class="header">
-        <a href="#"><img src="/imagens/LOGO (1).png" alt="" width="140" height="100">
+    <header class="header">
+        <nav class="navbar"> 
+            <a href="index.html"><img src="/imagens/LOGO (1).png" alt="" width="140" height="100">
             </a>
-        <div class="navbar">
-            <li> <a href="index.html">Home</a>
-            <li> <a href="produtos.html">Produtos</a>
-            <li> <a href="login.html">Entre</a>
-            <li> <img src="/imagens/shopping-bag.png" width="30" height="30">
-        </div>
-    </section>
+                <li> <a href="index.html">Home</a>
+                <li> <a href="login.html">Entrar</a>
+                <li><a href="carrinho.html"><img src="/imagens/shopping-bag.png" width="30" height="30"> </a>
+        </nav>
+    </header>
 
 
     <section id="carrinho" class="section-p1">
@@ -48,14 +47,14 @@
                     </td>
                     <td class="subtotal-produto">R$50,00</td>
                 </tr>
-                <tr></tr>
+                <tr>
                     <td>
                         <img src="/imagens/remove.png" alt="" class="img-remover">
                     </td>
                     <td>
                         <img src="/imagens/roupa1.png" alt="" class="uni-produto-carrinho">
                     </td>
-                    <td class="desc-produto">
+                    <td id="desc-produto">
                         Conjunto calça e blusa Feminino</td>
                     <td class="valor produto">R$50,00</td>
                     <td class="unidades-produto">

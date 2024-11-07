@@ -12,6 +12,7 @@ body{
 /*------------------------header universal--------------------------- */
 
 .header{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,14 +24,15 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    
 }
 
 .navbar li{
     list-style: none;
-    padding: 0 20px;
+    padding: 0 20px 0px ;
     position: relative;
 }
+
 .navbar li a{
     text-decoration: none;
     font-family: "Roboto", system-ui;  
@@ -47,7 +49,6 @@ body{
 
 #produto1{
     text-align: center;
-    
 }
 
 .pro-container{
@@ -111,33 +112,37 @@ body{
 
 #detalhesp{
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.25rem;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
 }
 
 
 #detalhesp .produto-unico{
-    width: 70%;
-    margin: 50px 50px 0 0;
-    padding-left: 625px;
+    width: 20%;
+    margin-right: 3.125rem;
+    margin-top: 2rem;
+    
 }
 
 .grupo-img-pequenas {
     display: flex;
-    margin-top: 10px;
 }
 
 .colu-img-pequena{
-    flex-basis: 26%;
+    flex-basis: 36%;
     cursor: pointer;
     padding: 5px;
 }
 
 #detalhesp .detalhes-produto-unico{
     width: 50%;
-    padding-top: 150px;
+    margin-top: 3rem;
+    padding-top: 1.875rem;
 }
 #detalhesp .detalhes-produto-unico h4{
-    padding: 40px 0 5px 0;  
+    padding: 2.5rem 0 0.313rem 0;  
     text-decoration: none;
     font-family: "Roboto", system-ui;  
     font-weight: 700;
@@ -156,14 +161,14 @@ body{
 #detalhesp .detalhes-produto-unico select{
     display: block;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }   
 #detalhesp .detalhes-produto-unico input{
-    width: 50px;
-    height: 47px;
-    padding-left: 10px;
+    width: 3.125rem;
+    height: 2.938rem;
+    padding-left: 0.625rem;
     font-size: 16px;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 #detalhesp .detalhes-produto-unico button{
@@ -173,12 +178,23 @@ body{
     font-weight: 700;
     font-style: normal;
     color: white;
-    height: 40px;
-    width: 90px;
+    height: 2.5rem;
+    width: 5.625rem;
 }
 
+#detalhesp .detalhes-produto-unico span{
+    line-height: 25px;
+    font-family: "Roboto", system-ui;  
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
 
 /*---------------------------------- CARRINHO -----------------------*/
+
+#carrinho{
+    overflow-x: auto;
+}
 
 #carrinho table{
     width: 70%;
@@ -206,7 +222,8 @@ body{
 }
 #carrinho table td:nth-child(3){
     width: 250px;
-    text-align: center;
+    align-items: center;
+    
 }
 #carrinho table td:nth-child(4),
  #carrinho table td:nth-child(5),
@@ -235,18 +252,19 @@ body{
     color: white;
     font-size: 13px;
     padding: 18px 0 ;
-    border: 1px solid #3f3f41;;
+    border: 1px solid #3f3f41;
+    text-align: center;
 }
 
 #carrinho table tbody tr td {
     padding-top: 15px;
-
+    
 }
 
 #carrinho table tbody td {
     font-size: 13px;
+    
 }
-
 
 
 #carrinho table thead #carrinho-tabela{
@@ -297,7 +315,7 @@ body{
 
 
 
-/*---------------------------------- LOGIN-----------------------*/
+/*---------------------------------- LOGIN E CADASTRO-----------------------*/
 
 .main-login{
     width: 100vw;
@@ -374,6 +392,10 @@ body{
     color: rgba(255, 255, 255, 0.788);
 }
 
+.textfield.error input{
+    background: red;
+}
+
 .btn-login{
     width: 100%;
     padding: 16px 0px;
@@ -399,3 +421,70 @@ h6{
 a{
     color: gold;
 }
+
+
+
+/*---------------------------------- RESPONSIVIDADE-----------------------*/
+@media (max-width: 412px){
+
+    .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*---------------------------------- HOME-----------------------*/
+
+    .pro-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+/*---------------------------------- PRODUTO UNICO -----------------------*/
+    
+    #detalhesp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #detalhesp .produto-unico{
+        width: 80%;
+        margin-right: 0px;
+        margin-left: 50px;
+    }
+    #detalhesp .detalhes-produto-unico{
+        width: 100%;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-left: 40px;
+       
+    }
+
+    /*---------------------------------- CARRINHO -----------------------*/
+    
+    #carrinho table{
+        width: 100%;
+        margin-left: 0px;
+        table-layout: auto;
+    }
+    #carrinho-final{
+        width: 100%;
+    }
+
+    #subtotal{
+        width: 100%;
+        padding-right: 50px;
+
+    }
+    #carrinho table tbody td {
+        font-size: 13px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+   
+    
+}
+
+
+
