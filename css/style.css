@@ -9,6 +9,29 @@ body{
     background-color: #2c2c2c;
 }
 
+/*------------------------inputs type file--------------------------- */
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-label-input {
+  padding: 20px 25px;
+  width: 200px;
+  background:  rgba(255, 217, 0, 0.795);
+  display: block;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: .5s;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+.custom-label-input:hover{
+    color:  rgb(0, 0, 0);
+    background:  #fff200;
+}
 /*------------------------header universal--------------------------- */
 
 .header{
@@ -312,7 +335,6 @@ body{
     font-weight: 700;
     font-style: normal;
 }
-
 
 
 /*---------------------------------- LOGIN E CADASTRO-----------------------*/

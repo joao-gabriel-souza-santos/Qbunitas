@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Qbunitas/css/style.css">
+</head>
+
+<body>
+    <form action = "http://localhost/projetoweb/php/Cadastro_Usuario.php" method="POST" id="form">
+        <fieldset>
+            <div class="main-login">
+                <img src="/imagens/LOGO (1).png" alt="" width="150" height="100" class="logo-login">
+                <div class="right-login">
+                    <div class="card-login">
+                        <h1>Cadastrar Produto</h1>
+                        <div class="textfield">
+                            <label for="nome-do-produto">Nome</label>
+                            <input type="text" name="nome-do-produto" placeholder="Nome do produto" id="nome-do-produto" required onblur="validarNome()">
+                        </div>
+
+                        <div class="textfield">
+                            <label for="descricao-do-produto">Descrição</label>
+                            <input type="text" name="descricao-do-produto" placeholder="Descrição do produto" id="descricao-do-produto"  required onblur="validaCPF()">
+                        </div>
+                        <div class="textfield">
+                            <label for="tamanho-do-produto">Tamanho</label>
+                            <input type="text" name="tamanho-do-produto" placeholder="Tamanho do produto" id="tamanho-do-produto" required onblur="validarEmail()">
+                        </div>
+
+                        <form action="/upload" method="post" enctype="multipart/form-data">    
+                            <label for="imagem-do-produto" class="custom-label-input">Imagem do produto </label>
+                            <input type="file" id="imagem-do-produto" name="imagem-do-usuario">
+                        </form>        
+                        
+                       
+                        
+                        <a href="login.html">
+                            <h6> Já tem um cadastro ?</h6>
+                        </a>
+                        <button type="submit" class="btn-login">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+
+    <script src="/projetoweb/script.js"></script>
+
+</body>
+
+</html>
