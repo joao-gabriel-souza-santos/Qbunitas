@@ -20,7 +20,7 @@
         ]);
 
         echo "Cadastro no banco de dados efetuado com sucesso";
-        header ('Location: /projetoweb/php/Cadastro_Usuario.php');
+        header ('Location: /projetoweb/html/index.php');
         exit();
 
     } catch(PDOException $e){

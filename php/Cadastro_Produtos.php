@@ -18,7 +18,7 @@
         $stmt->bindValue(':imagem', $imagemConteudo, PDO::PARAM_LOB);
         $stmt->execute();
         echo "Cadastro no banco de dados efetuado com sucesso";
-        header ('Location: /projetoweb/php/Cadastro_Produtos.php');
+        header ('Location: /projetoweb/html/index.php');
         exit();
 
     } catch(PDOException $e){
