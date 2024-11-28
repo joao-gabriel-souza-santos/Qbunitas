@@ -7,7 +7,8 @@ form.addEventListener("submit", (event) => {
 
     if(validarNome() && validarEmail() && validaCPF() && validarSenha() && confirmar_senhas()){
         alert("cadastrado com sucesso");
-        this.reset();
+
+        form.reset();
     }else{
         alert("Alguns campos estão invalidos")
     }

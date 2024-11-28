@@ -6,7 +6,7 @@
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
         $cpf = filter_input(INPUT_POST, 'cpf', FILTER_SANITIZE_STRING);
         $data_nasc = filter_input(INPUT_POST, 'data_nasc', FILTER_SANITIZE_STRING);
-        $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+        $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
 
         $sql = "INSERT INTO usuarios (nome, cpf, email, data_nasc, senha) VALUES (:nome, :cpf, :email, :data_nasc, :senha);";
 
@@ -20,7 +20,7 @@
         ]);
 
         echo "Cadastro no banco de dados efetuado com sucesso";
-        header ('Location: /projetoweb/html/cadastro.html');
+        header ('Location: /projetoweb/php/Cadastro_Usuario.php');
         exit();
 
     } catch(PDOException $e){
